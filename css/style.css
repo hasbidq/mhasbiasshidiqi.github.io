@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Style untuk header */
+header {
+  background-color: #333; /* Warna latar belakang */
+  padding: 20px 0; /* Padding atas dan bawah 20px, padding kiri dan kanan 0 */
+  color: #fff; /* Warna teks */
+  position: fixed; /* Buat header tetap di bagian atas */
+  width: 100%; /* Lebar header 100% */
+  z-index: 1000; /* Atur z-index agar header tampil di atas konten */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk efek elevasi */
+  transition: background-color 0.3s, padding 0.3s; /* Tambahkan efek transisi untuk warna latar belakang dan padding */
+}
+
+/* Tambahkan efek hover saat kursor diarahkan ke header */
+header:hover {
+  background-color: #444; /* Ubah warna latar belakang saat dihover */
+}
+
+/* Teks judul */
+header h1 {
+  font-size: 24px; /* Ukuran teks judul */
+}
+
+/* Tambahkan animasi untuk judul saat dihover */
+header h1:hover {
+  color: #ffd700; /* Ubah warna teks saat dihover */
+  transform: rotate(5deg); /* Rotasi judul */
+  transition: color 0.3s, transform 0.3s; /* Tambahkan efek transisi */
+}
+
+/* Tambahkan efek hover untuk link */
+header a:hover {
+  color: #ffd700; /* Ubah warna teks link saat dihover */
+}
+
+
+/* Style untuk logo */
+.logo {
+  margin-left: 20px; /* Jarak kiri dari logo */
+}
+
+.logo img {
+  width: 70px; /* Lebar gambar logo */
+  height: auto; /* Tinggi gambar logo menyesuaikan proporsi */
+}
+
+/* Style untuk navigasi */
+nav {
+  display: flex; /* Menjadikan elemen-elemen di dalamnya menjadi flexbox */
+  align-items: center; /* Menyamakan ketinggian elemen-elemen di dalamnya */
+  justify-content: space-between; /* Menyamakan jarak antara elemen-elemen dan tepi kontainer */
+  margin-right: 20px; /* Jarak kanan dari navigasi */
+  background-color: #333; /* Warna latar belakang */
+  padding: 10px 10px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+  border-radius: 10px; /* Border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk efek elevasi */
+}
+
+nav ul {
+  list-style-type: none; /* Menghilangkan tanda listing */
+  display: flex; /* Menjadikan elemen-elemen di dalamnya menjadi flexbox */
+}
+
+nav ul li {
+  margin-right: 20px; /* Jarak antar elemen navigasi */
+}
+
+nav ul li a {
+  color: #fff; /* Warna teks link */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  transition: color 0.3s; /* Efek transisi perubahan warna teks */
+  font-size: 18px; /* Ukuran font */
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Warna teks link saat dihover */
+  transform: scale(1.1); /* Efek scaling saat dihover */
+}
+
+/* Style untuk bagian home */
+#home {
+  background-image: url('path/to/your/image.jpg'); /* Gambar latar belakang */
+  background-size: cover; /* Ukuran gambar mengisi elemen secara proporsional */
+  background-position: center; /* Posisi gambar di tengah-tengah */
+  padding: 100px 0; /* Padding atas dan bawah 100px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+  color: #140c0c; /* Warna teks */
+}
+
+#home .container {
+  max-width: 1200px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#home h2 {
+  font-size: 36px; /* Ukuran font judul */
+  margin-bottom: 20px; /* Jarak bawah dari judul */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek bayangan teks */
+}
+
+#home p.span {
+  font-size: 18px; /* Ukuran font paragraf */
+  line-height: 1.6; /* Tinggi baris */
+  margin-bottom: 30px; /* Jarak bawah dari paragraf */
+}
+
+/* Style untuk bagian profil */
+#profil {
+  background-color: #f9f9f9; /* Warna latar belakang */
+  padding: 50px 0; /* Padding atas dan bawah 50px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#profil .container {
+  max-width: 1000px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#profil h2 {
+  color: #333; /* Warna teks judul */
+  font-size: 36px; /* Ukuran font judul */
+  margin-bottom: 20px; /* Jarak bawah dari judul */
+}
+
+#profil .profil-saya {
+  font-size: 18px; /* Ukuran font span */
+  line-height: 1.6; /* Tinggi baris */
+  margin-bottom: 30px; /* Jarak bawah dari paragraf */
+}
+
+#profil img {
+  border-radius: 50%; /* Bentuk gambar menjadi lingkaran */
+  margin-bottom: 20px; /* Jarak bawah dari gambar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk efek elevasi */
+}
+
+/* Style untuk bagian motto */
+#motto {
+  background-color: #f9f9f9; /* Warna latar belakang */
+  padding: 100px 0; /* Padding atas dan bawah 100px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#motto .container {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#motto h2 {
+  color: #333; /* Warna teks judul */
+}
+
+#motto .motto-hidup {
+  color: #666; /* Warna teks motto */
+  font-size: 18px; /* Ukuran font motto */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+/* Style untuk bagian hobi */
+#hobi {
+  background-color: #fff; /* Warna latar belakang */
+  padding: 50px 0; /* Padding atas dan bawah 50px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#hobi .container {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#hobi h2 {
+  color: #333; /* Warna teks judul */
+}
+
+#hobi .gambar-hobi {
+  margin-top: 20px; /* Jarak atas dari galeri gambar */
+}
+
+#hobi .gambar-hobi img {
+  width: 200px; /* Lebar gambar hobi */
+  margin: 0 10px; /* Jarak antar gambar */
+  border-radius: 10px; /* Border radius */
+}
+
+#hobi .span {
+  color: #666; /* Warna teks span */
+  font-size: 18px; /* Ukuran font span */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+/* Style untuk bagian kemampuan */
+#kemampuan {
+  background-color: #f9f9f9; /* Warna latar belakang */
+  padding: 100px 0; /* Padding atas dan bawah 100px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#kemampuan .container {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#kemampuan h2 {
+  color: #333; /* Warna teks judul */
+}
+
+#kemampuan .span {
+  color: #666; /* Warna teks span */
+  font-size: 18px; /* Ukuran font span */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+/* Style untuk bagian lesson learned */
+#lesson {
+  background-color: #fff; /* Warna latar belakang */
+  padding: 50px 0; /* Padding atas dan bawah 50px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#lesson .container {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#lesson h2 {
+  color: #333; /* Warna teks judul */
+}
+
+#lesson .span {
+  color: #666; /* Warna teks span */
+  font-size: 18px; /* Ukuran font span */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+/* Style untuk bagian harapan setelah lulus */
+#wish {
+  background-color: #f9f9f9; /* Warna latar belakang */
+  padding: 100px 0; /* Padding atas dan bawah 100px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#wish .container {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#wish h2 {
+  color: #333; /* Warna teks judul */
+}
+
+#wish .span {
+  color: #666; /* Warna teks span */
+  font-size: 18px; /* Ukuran font span */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+/* Style untuk bagian gallery */
+#gallery {
+  background-color: #fff; /* Warna latar belakang */
+  padding: 50px 0; /* Padding atas dan bawah 50px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#gallery .container-galery {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#gallery h2 {
+  color: #333; /* Warna teks judul */
+}
+
+#gallery .position-galery {
+  display: flex; /* Menjadikan elemen-elemen di dalamnya menjadi flexbox */
+  justify-content: space-between; /* Menyamakan jarak antara elemen-elemen */
+  flex-wrap: wrap; /* Membungkus elemen jika tidak cukup lebar */
+}
+
+.gallery {
+  position: relative; /* Penempatan relatif */
+  margin-bottom: 20px; /* Jarak bawah galeri */
+}
+
+.gallery img {
+  width: 100%; /* Lebar gambar */
+  height: auto; /* Tinggi gambar menyesuaikan proporsi */
+  border-radius: 10px; /* Border radius */
+}
+
+.gallery .desc {
+  position: absolute; /* Penempatan absolut */
+  bottom: 0; /* Di bagian bawah */
+  left: 0; /* Di bagian kiri */
+  background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang dengan transparansi */
+  color: #fff; /* Warna teks */
+  padding: 10px; /* Padding 10px */
+  width: 100%; /* Lebar 100% */
+  border-bottom-left-radius: 10px; /* Border radius sudut kiri bawah */
+  border-bottom-right-radius: 10px; /* Border radius sudut kanan bawah */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* Style untuk bagian video */
+#video {
+  background-color: #f9f9f9; /* Warna latar belakang */
+  padding: 100px 0; /* Padding atas dan bawah 100px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* Style untuk bagian peta */
+#maps {
+  background-color: #f9f9f9; /* Warna latar belakang */
+  padding: 50px 0; /* Padding atas dan bawah 50px, padding kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+#maps .container {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+}
+
+#maps h2 {
+  color: #333; /* Warna teks judul */
+}
+
+#maps .span {
+  color: #666; /* Warna teks span */
+  font-size: 18px; /* Ukuran font span */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+#maps .maps {
+  margin-top: 20px; /* Jarak atas dari peta */
+}
+
+#maps iframe {
+  width: 100%; /* Lebar iframe 100% */
+  height: 400px; /* Tinggi iframe 400px */
+  border: 0; /* Hapus border */
+}
+
+
+/* Style untuk footer */
+footer {
+  background-color: #333; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  padding: 50px 0; /* Padding atas dan bawah 50px, padding kiri dan kanan 0 */
+}
+
+.footer-container {
+  display: flex; /* Menjadikan elemen-elemen di dalamnya menjadi flexbox */
+  justify-content: space-between; /* Menyamakan jarak antara elemen-elemen */
+  align-items: center; /* Menyamakan ketinggian elemen-elemen */
+}
+
+.footer-content {
+  flex: 1; /* Elemen ini akan mengambil sebagian besar ruang yang tersedia */
+}
+
+.footer-content h3 {
+  margin-bottom: 20px; /* Jarak bawah dari judul */
+}
+
+.footer-content p {
+  text-align: center; /* Teks rata tengah */
+}
+
+.social-links {
+  list-style-type: none; /* Menghilangkan tanda listing */
+  padding: 0; /* Menghilangkan padding */
+  margin: 20px 0 0; /* Jarak atas 20px, jarak bawah 0, jarak kiri dan kanan 0 */
+  text-align: center; /* Teks rata tengah */
+}
+
+.social-links li {
+  display: inline-block; /* Menjadikan elemen-elemen berbaris */
+  margin-right: 10px; /* Jarak kanan antara elemen-elemen */
+}
+
+.social-links li:last-child {
+  margin-right: 0; /* Menghilangkan jarak kanan dari elemen terakhir */
+}
+
+.social-links li a {
+  color: #fff; /* Warna teks link */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  transition: color 0.3s; /* Efek transisi perubahan warna teks */
+}
+
+.social-links li a:hover {
+  color: #ffd700; /* Warna teks link saat dihover */
+}
+
+.footer-bottom {
+  text-align: center; /* Teks rata tengah */
+  margin-top: 20px; /* Jarak atas dari footer bottom */
+}
+
+/* Style untuk navbar */
+nav {
+  position: fixed; /* Mengatur posisi navbar tetap saat digulir */
+  width: 100%; /* Lebar navbar 100% */
+  top: 0; /* Navbar berada di bagian atas */
+  background-color: #333; /* Warna latar belakang */
+  transition: top 0.3s; /* Efek transisi ketika navbar bergerak */
+  z-index: 1000; /* Z-index agar navbar tampil di atas konten */
+}
+
+nav ul {
+  list-style-type: none; /* Menghilangkan tanda listing */
+  margin: 0; /* Menghilangkan margin */
+  padding: 0; /* Menghilangkan padding */
+  text-align: center; /* Teks rata tengah */
+}
+
+nav ul li {
+  display: inline; /* Menjadikan elemen berbaris */
+}
+
+nav ul li a {
+  display: block; /* Menjadikan link sebagai blok */
+  padding: 20px; /* Padding 20px */
+  color: #fff; /* Warna teks */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  transition: background-color 0.3s; /* Efek transisi ketika dihover */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Warna latar belakang saat dihover */
+}
